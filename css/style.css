@@ -15,9 +15,9 @@
 header {
   width: auto;
   height: 620px;
-  background-image: url("../img/navio-background.png");
+  background-image: url("../img/navio-backgroun-upgrade.jpg");
   background-color: #0f3d4c;
-  background-position: center;
+  background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -136,6 +136,33 @@ header {
   margin-right: 10px;
 }
 
+/* Btn Whatsapp*/
+
+
+
+.whatsapp-btn {
+  background-color: #20D04F;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+  position: fixed;
+  bottom: 5%;
+  right: 3%;
+}
+
+.whatsapp-btn:hover {
+  background-color: transparent;
+  border: 1px solid #1aa912;
+  color: #1aa912;
+}
+
+.whatsapp-btn img {
+  height: 50px;
+  width: 50px;
+}
+
 /*CARDS*/
 .content {
   height: 700px;
@@ -190,14 +217,79 @@ header {
   font-size: 14px;
   padding: 20px;
   cursor: default;
+}
+
+/*BOTÃO*/
+.slogan {
+  position: relative;
+  height: 200px;
+}
+.slogan h1 {
+  width: 700px;
+  color: #fff;
+  font-family: var(--font-poppins);
+  font-size: 32px;
+  font-weight: 200;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+}
+
+.slogan h2 {
+  margin-top: 50px;
+  width: 550px;
+  color: #fff;
+  font-family: var(--font-montserrat);
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  position: absolute;
+  top: 60%;
+  left: 5%;
+}
+
+.slogan h2 span {
+  color: #f2f625;
+}
+
+/*BOTÃO DO INICIO*/
+
+.btn-container__0 {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 70px;
+  margin-left: 85px;
+}
+
+.btn__0 {
+  background-color: #136988;
+  color: #fff;
+  border-radius: 100px;
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-family: var(--font-inter);
+  text-decoration: none;
   transition: 0.2s;
 }
 
-.card-title:hover {
+.btn__0:hover {
+  background-color: transparent;
+  border: 1px solid #1aa912;
   color: #1aa912;
-  font-size: 22px;
 }
 
+.btn-container__0 .btn__0 img {
+  height: 27px;
+  width: 25px;
+  margin-right: 10px;
+}
 /*BOTÃO*/
 
 .btn-container {
@@ -237,7 +329,6 @@ header {
   width: 50px;
   margin-right: 10px;
 }
-
 /*Vantagens*/
 
 .vantagens-content {
@@ -403,7 +494,7 @@ header {
 /* RESPONSIVIDADE PARA TELAS */
 
 @media screen and (max-width: 1200px) {
-  .navbar-container ul .navbar-items {
+  .navbar-container ul {
     margin-left: 400px;
     display: flex;
     flex-direction: row;
@@ -416,25 +507,50 @@ header {
     font-size: 14px;
   }
   .navbar-container ul {
-    flex-direction: column;
-    position: absolute;
+    display: none;
   }
 
-  .navbar-container ul .navbar-items {
-    padding: 10px 0;
+  .navbar-container .navbar-logo{
+    margin-top: 0;
+    margin-left: 150px;
   }
 
-  .slogan h1,
+  .slogan h1 {
+    font-size: 26px;
+    width: 350px;
+  }
+
   .slogan h2 {
+    width: 350px;
+    font-size: 14px;
+    top: 65%;
+  }
+
+  .btn-container__0 {
+    margin-left: 0;
+    margin-top: 150px;
+  }
+
+  .content h2 {
     font-size: 24px;
   }
 
+  .content {
+    height: auto;
+  }
+
   .card-container {
-    grid-template-columns: 1fr;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 40px;
+    overflow: hidden;
+    margin-left: 90px;
+    height: auto;
   }
 
   .card-title {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .btn-container__0,
@@ -453,15 +569,55 @@ header {
     background-size: cover;
   }
 
+  .text-vantagens-container{
+    width: 350px;
+  }
+
   .text-vantagens-container h1 {
-    font-size: 24px;
+    font-size: 20px;
+  }
+
+  .text-vantagens-container h2 {
+    font-size: 12px;
   }
 
   .btn-vantagens {
     padding: 10px 30px;
   }
 
+  .btn-vantagens-container {
+    left: 35%;
+    right: 35%;
+    bottom: 20%;
+  }
+
   .footer-content {
     flex-direction: column;
   }
+
+  .footer-logo {
+    height: 25px;
+  }
+
+  .quick-access{
+    display: none;
+  }
+
+  .ceo-info {
+    display: none;
+  }
+
+  .contact-container{
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .social-media {
+    text-align: center;
+  }
+
+  .social-media ul li .icon {
+    margin: 0;
+  }
+
 }
