@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  .header-bg {
+    width: 100%;
+    height: auto;
+  }
+  
+  .back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+  }
+  
+  .logo {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 60px;
+    width: auto;
+  }
+  
+  .title {
+    position: absolute;
+    bottom: 46px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 36px;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .content {
+    padding: 20px;
+    background: none; /* Removed background color for the main content */
+  }
+  
+  .main-title-container {
+    background-color: white;
+    padding: 20px;
+  }
+  
+  .main-title {
+    color: #03384B;
+    text-align: center;
+    font-family: Inter, sans-serif;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+  }
+  
+  .info-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    background: white; /* Added background color for the info section */
+  }
+  
+  .info-image {
+    width: 45%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .info-text {
+    width: 45%;
+    text-align: left;
+  }
+  
+  .info-text p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .footer {
+    background-color: #0D2026;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .footer-logo {
+    height: 40px;
+    width: auto;
+  }
+  
+  .footer p {
+    font-size: 14px;
+    margin: 10px 0 0;
+  }
+  

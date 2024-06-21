@@ -1,0 +1,467 @@
+:root {
+  /* fonts */
+  --font-inter: Inter;
+  --font-montserrat: Montserrat;
+  --font-poppins: Poppins;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*NAVBAR*/
+header {
+  width: auto;
+  height: 620px;
+  background-image: url("../img/navio-background.png");
+  background-color: #0f3d4c;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0f3d4c;
+  width: auto;
+  height: 80px;
+}
+
+.navbar-logo {
+  flex-grow: 1;
+  margin-left: 95px;
+  margin-top: 20px;
+}
+
+.navbar-logo img {
+  height: 40px;
+  width: 140px;
+}
+
+/* Navbar items */
+.navbar-container ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin-left: auto;
+  margin-right: 150px;
+}
+
+.navbar-container ul .navbar-items {
+  font-size: 16px;
+  font-family: var(--font-inter);
+  padding-left: 50px;
+}
+
+.navbar-container ul .navbar-items a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/*Slogan*/
+
+.slogan {
+  position: relative;
+  height: 200px;
+}
+.slogan h1 {
+  width: 700px;
+  color: #fff;
+  font-family: var(--font-poppins);
+  font-size: 32px;
+  font-weight: 200;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+}
+
+.slogan h2 {
+  margin-top: 50px;
+  width: 550px;
+  color: #fff;
+  font-family: var(--font-montserrat);
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  position: absolute;
+  top: 60%;
+  left: 5%;
+}
+
+.slogan h2 span {
+  color: #f2f625;
+}
+
+/*BOTÃO DO INICIO*/
+
+.btn-container__0 {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 70px;
+  margin-left: 85px;
+}
+
+.btn__0 {
+  background-color: #136988;
+  color: #fff;
+  border-radius: 100px;
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-family: var(--font-inter);
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.btn__0:hover {
+  background-color: transparent;
+  border: 1px solid #1aa912;
+  color: #1aa912;
+}
+
+.btn-container__0 .btn__0 img {
+  height: 27px;
+  width: 25px;
+  margin-right: 10px;
+}
+
+/*CARDS*/
+.content {
+  height: 700px;
+  padding: 2em;
+  background-color: #eee;
+}
+
+.content .service-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content h2 {
+  margin-top: 20px;
+  font-size: 36px;
+  font-family: var(--font-inter);
+  color: #136988;
+}
+
+.card-container {
+  height: 300px;
+  width: auto;
+  margin-top: 130px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 80px);
+  justify-content: space-between;
+  grid-gap: 120px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 100px;
+  border-top: 1px solid #136988;
+  border-bottom: 1px solid #136988;
+  background-color: transparent;
+  transition: 0.2s;
+}
+
+.card:hover {
+  border-color: #1aa912;
+  width: 300px;
+  height: 150px;
+}
+
+.card-title {
+  color: #136988;
+  font-family: var(--font-inter);
+  font-size: 14px;
+  padding: 20px;
+  cursor: default;
+  transition: 0.2s;
+}
+
+.card-title:hover {
+  color: #1aa912;
+  font-size: 22px;
+}
+
+/*BOTÃO*/
+
+.btn-container {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+  padding-top: 3em;
+  width: auto;
+  height: 100px;
+  cursor: pointer;
+}
+
+.btn {
+  background-color: #136988;
+  color: #fff;
+  border-radius: 15px;
+  padding: 10px 50px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-family: var(--font-inter);
+  text-decoration: none;
+  transition: 0.7s;
+}
+
+.btn:hover {
+  background-color: transparent;
+  border: 2px solid #1aa912;
+  color: #1aa912;
+}
+
+.btn-container .btn img {
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+}
+
+/*Vantagens*/
+
+.vantagens-content {
+  height: 500px;
+  background-image: url("../img/vantagens.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.text-vantagens-container {
+  width: 670px;
+  position: absolute;
+  top: 25%;
+  left: 10%;
+}
+
+.text-vantagens-container h1 {
+  color: #fff;
+  font-size: 36px;
+  font-family: var(--font-poppins);
+}
+
+.text-vantagens-container h2 {
+  color: #fff;
+  font-size: 16px;
+  font-family: var(--font-poppins);
+}
+
+/*VANTAGENS BUTTON*/
+
+.btn-vantagens-container {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+  padding-top: 3em;
+  width: auto;
+  height: 100px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 10%;
+  right: 20%;
+}
+
+.btn-vantagens {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 15px;
+  padding: 12px 50px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-family: var(--font-inter);
+  text-decoration: none;
+  transition: 0.7s;
+}
+
+.btn-vantagens:hover {
+  background-color: transparent;
+  border: 2px solid #1aa912;
+  color: #1aa912;
+}
+
+/*FOOTER*/
+.footer-content {
+  background-color: #0f3d4c;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  color: #fff;
+}
+
+.footer-logo {
+  height: 60px;
+  width: auto;
+}
+
+.quick-access,
+.contact-container,
+.social-media {
+  text-align: left;
+  margin: 10px;
+}
+
+.quick-access h1,
+.contact-container h1,
+.social-media h1 {
+  font-size: 16px;
+  font-family: var(--font-inter);
+  color: #eee;
+}
+
+.quick-access ul,
+.contact-container ul,
+.social-media ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.quick-access ul li,
+.contact-container ul li,
+.social-media ul li {
+  margin: 5px 0;
+}
+
+.quick-access ul li a,
+.contact-container ul li a,
+.social-media ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-family: var(--font-inter);
+}
+
+.contact-container ul li {
+  display: flex;
+  align-items: center;
+}
+
+.contact-container ul li .icon,
+.social-media ul li .icon {
+  margin-right: 10px;
+}
+
+.ceo-info {
+  text-align: center;
+  margin: 10px;
+}
+
+.ceo-image {
+  height: 100px;
+  width: auto;
+  border-radius: 50%;
+}
+
+.ceo-info p {
+  font-family: var(--font-inter);
+  font-size: 12px;
+}
+
+.reserved {
+  text-align: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.reserved p {
+  font-family: var(--font-inter);
+  font-size: 10px;
+}
+
+.icon {
+  height: 20px;
+  width: 20px;
+}
+
+/* RESPONSIVIDADE PARA TELAS */
+
+@media screen and (max-width: 1200px) {
+  .navbar-container ul .navbar-items {
+    margin-left: 400px;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  * {
+    font-size: 14px;
+  }
+  .navbar-container ul {
+    flex-direction: column;
+    position: absolute;
+  }
+
+  .navbar-container ul .navbar-items {
+    padding: 10px 0;
+  }
+
+  .slogan h1,
+  .slogan h2 {
+    font-size: 24px;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .card-title {
+    font-size: 18px;
+  }
+
+  .btn-container__0,
+  .btn-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn__0,
+  .btn {
+    padding: 15px 30px;
+    font-size: 14px;
+  }
+
+  .vantagens-content {
+    background-size: cover;
+  }
+
+  .text-vantagens-container h1 {
+    font-size: 24px;
+  }
+
+  .btn-vantagens {
+    padding: 10px 30px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+}

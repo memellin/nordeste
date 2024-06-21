@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.header {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.header-bg {
+  width: 100%;
+  height: auto;
+}
+
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 60px;
+  width: auto;
+}
+
+.title {
+  position: absolute;
+  bottom: 146px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 36px;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.services-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.light-bg {
+  background-color: #EEE;
+}
+
+.dark-bg {
+  background-color: #072F3B;
+  color: white;
+}
+
+.service-card {
+  width: 45%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.service-image {
+  width: 35%;
+  height: 40%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.service-card h2 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.service-card p {
+  font-size: 16px;
+}
+
+.footer {
+  background-color: #0D2026;;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-logo {
+  height: 40px;
+  width: auto;
+}
+
+.footer p {
+  font-size: 14px;
+  margin: 10px 0 0;
+}
+
+@media screen and (max-width: 768px) {
+
+  .back-button {
+    top: 16px;
+    left: -14px;
+  }
+
+  .services-section {
+    flex-wrap: wrap;
+  }
+
+  .service-card {
+    width: 90%;
+  }
+  
+}
+
+@media screen and (max-width: 680px) {
+
+  .title {
+    bottom: 120px;
+    font-size: 24px;
+  }
+  
+  .logo {
+    height: 30px;
+  }
+
+  .service-card {
+    width: 100%;
+  }
+
+  .service-image {
+    width: 50%;
+    height: 50%;
+  }
+
+  .service-card h2 {
+    font-size: 20px;
+  }
+
+  .service-card p {
+    font-size: 14px;
+  }
+
+  .footer p {
+    font-size: 12px;
+  }
+  
+}
+
+@media screen and (max-height: 1200px) {
+
+  .title {
+    bottom: 40px;
+  }
+  
+}
