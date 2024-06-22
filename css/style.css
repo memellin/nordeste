@@ -14,7 +14,7 @@
 /*NAVBAR*/
 header {
   width: auto;
-  height: 620px;
+  height: 600px;
   background-image: url("../img/navio-backgroun-upgrade.jpg");
   background-color: #0f3d4c;
   background-position: top;
@@ -68,20 +68,23 @@ header {
 .slogan {
   position: relative;
   height: 200px;
+
 }
+
+
 .slogan h1 {
   width: 700px;
   color: #fff;
   font-family: var(--font-poppins);
   font-size: 32px;
-  font-weight: 200;
+  font-weight: 600;
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 5%;
 }
 
 .slogan h2 {
-  margin-top: 50px;
+  margin-top: 60px;
   width: 550px;
   color: #fff;
   font-family: var(--font-montserrat);
@@ -93,9 +96,8 @@ header {
   left: 5%;
 }
 
-.slogan h2 span {
-  color: #f2f625;
-}
+
+
 
 /*BOTÃO DO INICIO*/
 
@@ -220,37 +222,6 @@ header {
 }
 
 /*BOTÃO*/
-.slogan {
-  position: relative;
-  height: 200px;
-}
-.slogan h1 {
-  width: 700px;
-  color: #fff;
-  font-family: var(--font-poppins);
-  font-size: 32px;
-  font-weight: 200;
-  position: absolute;
-  top: 50%;
-  left: 5%;
-}
-
-.slogan h2 {
-  margin-top: 50px;
-  width: 550px;
-  color: #fff;
-  font-family: var(--font-montserrat);
-  font-size: 20px;
-  font-weight: bold;
-  text-align: left;
-  position: absolute;
-  top: 60%;
-  left: 5%;
-}
-
-.slogan h2 span {
-  color: #f2f625;
-}
 
 /*BOTÃO DO INICIO*/
 
