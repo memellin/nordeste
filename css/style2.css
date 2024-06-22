@@ -37,7 +37,6 @@ body {
 
 .title {
   position: absolute;
-  bottom: 146px;
   left: 50%;
   transform: translateX(-50%);
   font-size: 36px;
