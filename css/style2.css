@@ -40,7 +40,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   font-size: 36px;
-  padding: 10px 20px;
+  padding: 90px 20px;
   top: 190px;
 }
 
@@ -152,6 +152,7 @@ body {
     font-size: 12px;
   }
 }
+
 
 @media screen and (max-width: 1190px) {
   .title {
