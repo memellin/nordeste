@@ -68,9 +68,7 @@ header {
 .slogan {
   position: relative;
   height: 200px;
-
 }
-
 
 .slogan h1 {
   width: 700px;
@@ -95,9 +93,6 @@ header {
   top: 60%;
   left: 5%;
 }
-
-
-
 
 /*BOTÃO DO INICIO*/
 
@@ -140,10 +135,8 @@ header {
 
 /* Btn Whatsapp*/
 
-
-
 .whatsapp-btn {
-  background-color: #20D04F;
+  background-color: #20d04f;
   border-radius: 35px;
   display: flex;
   justify-content: center;
@@ -473,6 +466,7 @@ header {
   }
 }
 
+
 @media screen and (max-width: 800px) {
   * {
     font-size: 14px;
@@ -481,7 +475,7 @@ header {
     display: none;
   }
 
-  .navbar-container .navbar-logo{
+  .navbar-container .navbar-logo {
     margin-top: 0;
     margin-left: 150px;
   }
@@ -540,7 +534,7 @@ header {
     background-size: cover;
   }
 
-  .text-vantagens-container{
+  .text-vantagens-container {
     width: 350px;
   }
 
@@ -570,7 +564,7 @@ header {
     height: 25px;
   }
 
-  .quick-access{
+  .quick-access {
     display: none;
   }
 
@@ -578,7 +572,7 @@ header {
     display: none;
   }
 
-  .contact-container{
+  .contact-container {
     text-align: center;
     margin-top: 40px;
   }
@@ -590,10 +584,8 @@ header {
   .social-media ul li .icon {
     margin: 0;
   }
-
 }
-@media screen and (max-width: 700px){
-
+@media screen and (max-width: 700px) {
   body {
     overflow-x: hidden;
   }

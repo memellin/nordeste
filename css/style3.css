@@ -36,7 +36,7 @@ body {
   
   .title {
     position: absolute;
-    bottom: 46px;
+    top: 90px;
     left: 50%;
     transform: translateX(-50%);
     font-size: 36px;
@@ -106,5 +106,45 @@ body {
   .footer p {
     font-size: 14px;
     margin: 10px 0 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    .logo {
+      width: 50%;
+      height: 50px;
+      top: 10px;
+    }
+    .main-title{
+      font-size: 24px;
+    }
+    .back-button{
+      display: none;
+    }
+    .info-section {
+      flex-direction: column;
+    }
+  
+    .info-image {
+      width: 100%;
+    }
+  
+    .info-text {
+      width: 100%;
+    }
+    
+  }
+
+  @media screen and (min-width: 768px) {
+    .title{
+      top: 62px;
+      font-size: 24px;
+    }
+    .main-title{
+      font-size: 36px;
+    }
+    .back-button{
+      display: block;
+    }
+    
   }
   
