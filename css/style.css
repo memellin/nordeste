@@ -433,6 +433,11 @@ header {
     height: auto;
   }
 
+  .card{
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+  }
+
   .btn-container {
     margin-top: 50px;
   }
