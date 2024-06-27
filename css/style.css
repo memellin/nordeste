@@ -76,7 +76,7 @@ header {
   justify-content: center;
   align-items: start;
   margin: 5rem 0 0 8rem;
-
+  height: auto;
 }
 
 .slogan {
@@ -185,11 +185,11 @@ header {
 .card-container {
   height: 300px;
   width: auto;
-  margin-top: 130px;
+  margin-top: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  grid-gap: 200px 80px;
+  grid-gap: 60px 280px;
 }
 
 .card {
@@ -226,7 +226,7 @@ header {
   justify-content: center;
   align-items: flex-end;
   text-align: center;
-  padding-top: 3em;
+  padding-top: 16em;
   width: auto;
   height: 100px;
   cursor: pointer;
@@ -269,6 +269,7 @@ header {
 
 .text-vantagens-container {
   width: 670px;
+  height: auto;
   position: absolute;
   top: 25%;
   left: 10%;
@@ -507,7 +508,7 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     overflow: hidden;
-    margin: 15px 110px;
+    margin: 15px 210px;
     height: auto;
     grid-gap: 50px 80px;
   }
