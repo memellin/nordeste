@@ -60,12 +60,26 @@ header {
 .navbar-container ul .navbar-items a {
   text-decoration: none;
   color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.navbar-container ul .navbar-items a:hover{
+  color: #ccc;
+  font-size: 18px;
 }
 
 /*Slogan*/
+.slogan-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin: 5rem 0 0 8rem;
+
+}
 
 .slogan {
-  position: relative;
   height: 200px;
 }
 
@@ -75,22 +89,15 @@ header {
   font-family: var(--font-poppins);
   font-size: 32px;
   font-weight: 600;
-  position: absolute;
-  top: 45%;
-  left: 5%;
 }
 
 .slogan h2 {
-  margin-top: 60px;
   width: 550px;
   color: #fff;
   font-family: var(--font-montserrat);
   font-size: 20px;
   font-weight: bold;
   text-align: left;
-  position: absolute;
-  top: 60%;
-  left: 5%;
 }
 
 /*BOTÃO DO INICIO*/
@@ -103,8 +110,7 @@ header {
   align-items: center;
   text-align: center;
   cursor: pointer;
-  margin-top: 70px;
-  margin-left: 85px;
+  margin: 0 0 0 250px;
 }
 
 .btn__0 {
@@ -180,11 +186,10 @@ header {
   height: 300px;
   width: auto;
   margin-top: 130px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 80px);
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  grid-gap: 220px;
+  grid-gap: 200px 80px;
 }
 
 .card {
@@ -194,7 +199,7 @@ header {
   flex-direction: column;
   text-align: center;
   width: 200px;
-  height: 100px;
+  height: 200px;
   background-color: transparent;
 }
 
@@ -295,7 +300,7 @@ header {
   height: 100px;
   cursor: pointer;
   position: absolute;
-  bottom: 10%;
+  bottom: 15%;
   right: 20%;
 }
 
@@ -414,8 +419,18 @@ header {
 }
 
 /* RESPONSIVIDADE PARA TELAS */
+@media screen and (min-width: 1367px) and (max-width: 1440px){
+  .card-container {
+    grid-gap: 200px 100px;
+    height: auto;
+  }
 
-@media screen and (min-width: 1024px) {
+  .content {
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
   .navbar-container ul {
     margin-left: 400px;
     display: flex;
@@ -431,6 +446,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     height: auto;
+    grid-gap: 10px;
   }
 
   .card{
@@ -462,13 +478,13 @@ header {
   }
 
   .slogan h1 {
-    font-size: 26px;
+    font-size: 32px;
     width: 354px;
   }
 
   .slogan h2 {
     width: 350px;
-    font-size: 14px;
+    font-size: 18px;
     top: 65%;
   }
 
@@ -491,8 +507,9 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     overflow: hidden;
-    margin-left: 90px;
+    margin: 15px 110px;
     height: auto;
+    grid-gap: 50px 80px;
   }
 
   .card-title {
@@ -517,6 +534,7 @@ header {
 
   .text-vantagens-container {
     width: 350px;
+    
   }
 
   .text-vantagens-container h1 {
@@ -525,10 +543,6 @@ header {
 
   .text-vantagens-container h2 {
     font-size: 12px;
-  }
-
-  .btn-vantagens {
-    padding: 10px 30px;
   }
 
   .btn-vantagens-container {
@@ -566,7 +580,7 @@ header {
     margin: 0;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 426) and (max-width: 767px) {
   
   .slogan {
    width: 200px;
@@ -594,21 +608,24 @@ header {
   }
 
   .text-vantagens-container{
-    width: 200px;
+    width: 180px;
+    top: 10%;
   }
 
   .text-vantagens-container h1 {
     width: 250px;
-    font-size: 22px;
+    font-size: 17px;
+    
   }
 
   .text-vantagens-container h2 {
     width: 250px;
-    font-size: 14px;
+    font-size: 12px;
+    margin-top: 5px;
   }
 
   .btn-vantagens-container {
-    right: 20%;
+    right: 22%;
   }
   
   .contact-container a {
@@ -658,6 +675,84 @@ header {
 
   .service-title{
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 425px) { 
+
+  .navbar-items {
+    display: none;
+  }
+
+  .navbar-logo {
+    padding: 0;
+    flex-grow: 0;
+    margin-left: 150px;
+  }
+
+  .slogan-container{
+    margin: 2rem 0 0 1rem;
+  }
+  
+  .slogan h1{
+    font-size: 22px;
+    width: auto;
+  }
+  
+  .slogan h2{
+    font-size: 16px;
+    width: auto;
+  }
+
+  .btn-container__0{
+    width: auto;
+    margin: 0 25px;
+    justify-content: center;
+  }
+
+  .btn__0{
+    padding: 10px 30px;
+    font-size: 14px;
+  }
+
+  .content {
+    height: auto;
+  }
+
+  .card-container {
+    justify-content: center;
+    grid-gap: 10px 80px;
+    height: auto;
+  }
+
+  .text-vantagens-container {
+    width: auto;
+    top: 1%;
+  }
+
+  .text-vantagens-container h1 {
+    font-size: 22px;
+  }
+
+  .text-vantagens-container h2 {
+    font-size: 14px;
+  }
+
+  .footer-content {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .footer-content h1 {
+    margin-top: 20px;
+  }
+
+  .footer-content a {
+    font-size: 14px;
+  }
+  
+  .footer-logo {
+    height: 30px;
   }
 
 }
