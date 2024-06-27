@@ -35,7 +35,6 @@ header {
 .navbar-logo {
   flex-grow: 1;
   margin-left: 95px;
-  margin-top: 20px;
 }
 
 .navbar-logo img {
@@ -192,68 +191,27 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  text-align: center;
   width: 200px;
   height: 100px;
-  border-top: 1px solid #136988;
-  border-bottom: 1px solid #136988;
   background-color: transparent;
-  transition: 0.2s;
-}
-
-.card:hover {
-  border-color: #1aa912;
-  width: 300px;
-  height: 150px;
 }
 
 .card-title {
   color: #136988;
   font-family: var(--font-inter);
   font-size: 14px;
-  padding: 20px;
   cursor: default;
+  padding: 10px 0;
 }
 
-/*BOTÃO*/
-
-/*BOTÃO DO INICIO*/
-
-.btn-container__0 {
-  background-color: transparent;
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  align-items: center;
-  text-align: center;
-  cursor: pointer;
-  margin-top: 70px;
-  margin-left: 85px;
+.card-img {
+  height: 150px;
+  width: 150px;
 }
 
-.btn__0 {
-  background-color: #136988;
-  color: #fff;
-  border-radius: 100px;
-  padding: 20px 50px;
-  display: flex;
-  align-items: center;
-  font-size: 20px;
-  font-family: var(--font-inter);
-  text-decoration: none;
-  transition: 0.2s;
-}
 
-.btn__0:hover {
-  background-color: transparent;
-  border: 1px solid #1aa912;
-  color: #1aa912;
-}
-
-.btn-container__0 .btn__0 img {
-  height: 27px;
-  width: 25px;
-  margin-right: 10px;
-}
 /*BOTÃO*/
 
 .btn-container {
@@ -457,17 +415,36 @@ header {
 
 /* RESPONSIVIDADE PARA TELAS */
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .navbar-container ul {
     margin-left: 400px;
     display: flex;
     flex-direction: row;
     list-style-type: none;
   }
+
+  .content {
+    height: auto;
+  }
+
+  .card-container{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .btn-container {
+    margin-top: 50px;
+  }
+
+  .btn {
+    padding: 20px 80px;
+    font-size: 22px;
+  }
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width:768px) and (max-width: 1023px) {
   * {
     font-size: 14px;
   }
@@ -477,7 +454,6 @@ header {
 
   .navbar-container .navbar-logo {
     margin-top: 0;
-    margin-left: 150px;
   }
 
   .slogan h1 {
@@ -507,8 +483,8 @@ header {
   .card-container {
     margin-top: 50px;
     display: flex;
-    flex-direction: column;
-    grid-gap: 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
     overflow: hidden;
     margin-left: 90px;
     height: auto;
@@ -585,8 +561,97 @@ header {
     margin: 0;
   }
 }
-@media screen and (max-width: 700px) {
-  body {
-    overflow-x: hidden;
+@media screen and (max-width: 767px) {
+  
+  .slogan {
+   width: 200px;
   }
+
+  .slogan h1 {
+    font-size: 24px;
+    width: 250px;
+  }
+
+  .slogan h2 {
+    font-size: 16px;
+    width: 250px;
+    top: 70%;
+  }
+
+  .btn-container__0 {
+    justify-content: end;
+    margin: 150px 30px 0 0;
+  }
+
+  .btn__0 {
+    padding: 20px;
+    font-size: 12px;
+  }
+
+  .text-vantagens-container{
+    width: 200px;
+  }
+
+  .text-vantagens-container h1 {
+    width: 250px;
+    font-size: 22px;
+  }
+
+  .text-vantagens-container h2 {
+    width: 250px;
+    font-size: 14px;
+  }
+
+  .btn-vantagens-container {
+    right: 20%;
+  }
+  
+  .contact-container a {
+    font-size: 12px;
+  }
+
+  .card-container {
+    justify-content: space-around;
+    margin-left: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 100px;
+    height: auto;
+  }
+
+  .content {
+    height: auto;
+  }
+
+  .navbar-container {
+    justify-content: center;
+  }
+
+  .navbar-container ul {
+    display: none;
+  }
+  
+  .navbar-logo{
+    margin-left: 0;
+    flex-grow: 0;
+  }
+
+  .footer-content {
+    flex-direction: column;
+
+  }
+
+  .quick-access ul a {
+    font-size: 12px;
+  }
+
+  .quick-access {
+    margin-top: 20px;
+  }
+
+  .service-title{
+    text-align: center;
+  }
+
 }
