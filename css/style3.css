@@ -114,6 +114,9 @@ body {
       height: 50px;
       top: 10px;
     }
+    .title{
+      display: none;
+    }
     .main-title{
       font-size: 24px;
     }
