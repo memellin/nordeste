@@ -64,7 +64,7 @@ header {
   transition: 0.5s;
 }
 
-.navbar-container ul .navbar-items a:hover{
+.navbar-container ul .navbar-items a:hover {
   color: #ccc;
   font-size: 18px;
 }
@@ -215,7 +215,6 @@ header {
   height: 150px;
   width: 150px;
 }
-
 
 /*BOTÃO*/
 
@@ -420,7 +419,7 @@ header {
 }
 
 /* RESPONSIVIDADE PARA TELAS */
-@media screen and (min-width: 1367px) and (max-width: 1440px){
+@media screen and (min-width: 1367px) and (max-width: 1440px) {
   .card-container {
     grid-gap: 200px 100px;
     height: auto;
@@ -443,14 +442,14 @@ header {
     height: auto;
   }
 
-  .card-container{
+  .card-container {
     display: flex;
     flex-wrap: wrap;
     height: auto;
     grid-gap: 10px;
   }
 
-  .card{
+  .card {
     margin-inline-start: auto;
     margin-inline-end: auto;
   }
@@ -465,8 +464,7 @@ header {
   }
 }
 
-
-@media screen and (min-width:768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   * {
     font-size: 13px;
   }
@@ -474,7 +472,7 @@ header {
     display: none;
   }
 
-  .navbar-container .navbar-logo {
+  .navbar-container {
     margin-top: 0;
   }
 
@@ -535,7 +533,6 @@ header {
 
   .text-vantagens-container {
     width: 350px;
-    
   }
 
   .text-vantagens-container h1 {
@@ -582,9 +579,12 @@ header {
   }
 }
 @media screen and (min-width: 426) and (max-width: 767px) {
-  
+  .navbar-logo {
+    right: 40px;
+  }
+
   .slogan {
-   width: 200px;
+    width: 200px;
   }
 
   .slogan h1 {
@@ -608,7 +608,7 @@ header {
     font-size: 12px;
   }
 
-  .text-vantagens-container{
+  .text-vantagens-container {
     width: 180px;
     top: 10%;
   }
@@ -616,7 +616,6 @@ header {
   .text-vantagens-container h1 {
     width: 250px;
     font-size: 17px;
-    
   }
 
   .text-vantagens-container h2 {
@@ -628,7 +627,7 @@ header {
   .btn-vantagens-container {
     right: 22%;
   }
-  
+
   .contact-container a {
     font-size: 12px;
   }
@@ -655,15 +654,14 @@ header {
   .navbar-container ul {
     display: none;
   }
-  
-  .navbar-logo{
+
+  .navbar-logo {
     margin-left: 0;
     flex-grow: 0;
   }
 
   .footer-content {
     flex-direction: column;
-
   }
 
   .quick-access ul a {
@@ -674,13 +672,12 @@ header {
     margin-top: 20px;
   }
 
-  .service-title{
+  .service-title {
     text-align: center;
   }
 }
 
-@media screen and (max-width: 425px) { 
-
+@media screen and (max-width: 425px) {
   .navbar-items {
     display: none;
   }
@@ -691,27 +688,27 @@ header {
     margin-left: 150px;
   }
 
-  .slogan-container{
+  .slogan-container {
     margin: 2rem 0 0 1rem;
   }
-  
-  .slogan h1{
+
+  .slogan h1 {
     font-size: 22px;
     width: auto;
   }
-  
-  .slogan h2{
+
+  .slogan h2 {
     font-size: 16px;
     width: auto;
   }
 
-  .btn-container__0{
+  .btn-container__0 {
     width: auto;
     margin: 0 25px;
     justify-content: center;
   }
 
-  .btn__0{
+  .btn__0 {
     padding: 10px 30px;
     font-size: 14px;
   }
@@ -751,9 +748,29 @@ header {
   .footer-content a {
     font-size: 14px;
   }
-  
+
   .footer-logo {
     height: 30px;
   }
 
+  @media screen and (max-width: 425px) {
+    .navbar-logo {
+      flex-grow: 0;
+      margin-left: 132px;
+    }
+
+    .btn{
+      padding: 10px 30px;
+      font-size: 22px;
+      margin-bottom: 60px;
+    }
+    
+    .text-vantagens-container{
+      top: 6.8%;
+      width: 300px;
+    }
+    .btn-vantagens-container{
+      left: 16%;
+    }
+  }
 }
