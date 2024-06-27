@@ -211,12 +211,13 @@ header{
 
 @media screen and (max-width: 1024px) {
   header {
-    height: 250px;
+    height: 300px;
   }
 
   .title {
-    font-size: 10px;
+    font-size: 25px;
     padding-top: 80px;
+    text-align: center;
   }
 
   .service-img {
@@ -225,11 +226,11 @@ header{
   }
 
   .service-description {
-    font-size: 12px;
+    font-size: 16.6px;
   }
 
   .footer p {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 
@@ -239,7 +240,7 @@ header{
   }
 
   .title {
-    font-size: 28px;
+    font-size: 48px;
     padding-top: 60px;
   }
 
@@ -253,6 +254,7 @@ header{
     height: 150px;
     width: 150px;
   }
+
 
   .service-description {
     font-size: 10px;
